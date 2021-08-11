@@ -1,9 +1,21 @@
 ```python
-Status = "I'm coding 👽"; count =5
-print(Status),
-while count !=0:
-    import time
-    print(" " * count +"." * count),
-    count -=1
-    time.sleep(0.3)
+from __future__ import annotations
+
+import json
+from dataclasses import asdict, dataclass
+
+
+@dataclass
+class Me:
+    languages: tuple[str, ...] = ("PHP", "Python", "JS", "TypeScript")
+    databases: tuple[str, ...] = ("MYSQL", "PostgreSQL", "Mongo", "Redis")
+    misc     : tuple[str, ...] = ("Docker", "Celery", "RabbitMQ", "Arq", "SQS")
+    ongoing  : tuple[str, ...] = ("Symfony", "Django", "Laravel", "NestJS", "Flask")
+
+    def jsonify(self) -> str:
+        return json.dumps(asdict(self), indent=4)
+        
+me = Me()
+print(me.jsonify())
+
 ```
