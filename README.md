@@ -1,21 +1,34 @@
-```python
-from __future__ import annotations
-
-import json
-from dataclasses import asdict, dataclass
-
-
-@dataclass
-class Me:
-    languages: tuple[str, ...] = ("PHP", "Python", "JS", "TypeScript")
-    databases: tuple[str, ...] = ("MYSQL", "PostgreSQL", "Mongo", "Redis")
-    misc     : tuple[str, ...] = ("Docker", "Celery", "RabbitMQ", "Arq", "SQS")
-    ongoing  : tuple[str, ...] = ("Symfony", "Django", "Laravel", "NestJS", "Flask")
-
-    def jsonify(self) -> str:
-        return json.dumps(asdict(self), indent=4)
-        
-me = Me()
-print(me.jsonify())
+```
+                     _  _     ____________.--.
+                  |\|_|//_.-"" .'    \   /|  |
+                  |.-"""-.|   /       \_/ |  |
+                  \  ||  /| __\_____________ |
+                  _\_||_/_| .-""            ""-.  __
+                .' '.    \//    I LOVE CODING    ".\/
+                ||   '. >()_                     |()<
+                ||__.-' |/\ \                    |/\
+                   |   / "|  \__________________/.""
+                  /   //  | / \ "-.__________/  /\
+               ___|__/_|__|/___\___".______//__/__\
+              /|\     [____________] \__/         |\
+             //\ \     |  |=====| |   /\\         |\\
+            // |\ \    |  |=====| |   | \\        | \\        ____...____....----
+          .//__| \ \   |  |=====| |   | |\\       |--\\---""""     .            ..
+_____....-//___|  \_\  |  |=====| |   |_|_\\      |___\\    .                 ...'
+ .      .//-.__|_______|__|_____|_|_____[__\\_____|__.-\\      .     .    ...::
+        //        //        /          \ `-_\\/         \\          .....:::
+  -... //     .  / /       /____________\    \\       .  \ \     .            .
+      //   .. .-/_/-.                 .       \\        .-\_\-.                 .
+     / /      '-----'           .             \ \      '._____.'         .
+  .-/_/-.         .                          .-\_\-.                          ...
+ '._____.'                            .     '._____.'                       .....
+        .                                                             ...... ..
+    .            .                  .                        .
+   ...                    .                      .                       .      .
+        ....     .                       .                    ....
+ TAGAOGLU  ......           . ..                       ......'
+             .......             '...              ....
+                                   ''''''      .              
 
 ```
+Personal website and blog: https://tamert.github.io
