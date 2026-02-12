@@ -344,19 +344,19 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     find_and_replace(root, 'github_value', _truncate_text(github_value, 30))
 
     optional_fields = {
-        'os_value': (os.environ.get('PROFILE_OS'), 28),
-        'host_value': (os.environ.get('PROFILE_HOST'), 28),
-        'kernel_value': (os.environ.get('PROFILE_KERNEL'), 28),
-        'ide_value': (os.environ.get('PROFILE_IDE'), 28),
-        'lang_prog_value': (os.environ.get('PROFILE_LANG_PROG'), 28),
-        'lang_comp_value': (os.environ.get('PROFILE_LANG_COMP'), 28),
-        'lang_real_value': (os.environ.get('PROFILE_LANG_REAL'), 24),
-        'hobby_soft_value': (os.environ.get('PROFILE_HOBBY_SOFT'), 28),
-        'hobby_hard_value': (os.environ.get('PROFILE_HOBBY_HARD'), 28),
-        'website_value': (os.environ.get('PROFILE_WEBSITE'), 30),
+        'os_value': (os.environ.get('PROFILE_OS'), 32),
+        'host_value': (os.environ.get('PROFILE_HOST'), 32),
+        'kernel_value': (os.environ.get('PROFILE_KERNEL'), 40),
+        'ide_value': (os.environ.get('PROFILE_IDE'), 40),
+        'lang_prog_value': (os.environ.get('PROFILE_LANG_PROG'), 40),
+        'lang_comp_value': (os.environ.get('PROFILE_LANG_COMP'), 40),
+        'lang_real_value': (os.environ.get('PROFILE_LANG_REAL'), 32),
+        'hobby_soft_value': (os.environ.get('PROFILE_HOBBY_SOFT'), 40),
+        'hobby_hard_value': (os.environ.get('PROFILE_HOBBY_HARD'), 40),
+        'website_value': (os.environ.get('PROFILE_WEBSITE'), 45),
         'linkedin_value': (os.environ.get('PROFILE_LINKEDIN'), 20),
         'discord_value': (os.environ.get('PROFILE_DISCORD'), 20),
-        'email_value': (os.environ.get('PROFILE_EMAIL'), 30),
+        'email_value': (os.environ.get('PROFILE_EMAIL'), 45),
     }
     for element_id, (value, max_len) in optional_fields.items():
         if value:
