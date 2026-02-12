@@ -1,0 +1,56 @@
+name: README build
+on:
+  push:
+    branches:
+      - main
+      - master
+  schedule:
+    - cron: "0 4 * * *"
+
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Get Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: cache/requirements.txt
+      - name: Install dependencies
+        run: python -m pip install -r cache/requirements.txt
+      - name: Update profile assets
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USER_NAME: ${{ secrets.USER_NAME || github.repository_owner }}
+          USE_REPO_ARCHIVE: ${{ secrets.USE_REPO_ARCHIVE || vars.USE_REPO_ARCHIVE }}
+          PROFILE_TITLE: ${{ secrets.PROFILE_TITLE || vars.PROFILE_TITLE }}
+          PROFILE_OS: ${{ secrets.PROFILE_OS || vars.PROFILE_OS }}
+          PROFILE_HOST: ${{ secrets.PROFILE_HOST || vars.PROFILE_HOST }}
+          PROFILE_KERNEL: ${{ secrets.PROFILE_KERNEL || vars.PROFILE_KERNEL }}
+          PROFILE_IDE: ${{ secrets.PROFILE_IDE || vars.PROFILE_IDE }}
+          PROFILE_LANG_PROG: ${{ secrets.PROFILE_LANG_PROG || vars.PROFILE_LANG_PROG }}
+          PROFILE_LANG_COMP: ${{ secrets.PROFILE_LANG_COMP || vars.PROFILE_LANG_COMP }}
+          PROFILE_LANG_REAL: ${{ secrets.PROFILE_LANG_REAL || vars.PROFILE_LANG_REAL }}
+          PROFILE_HOBBY_SOFT: ${{ secrets.PROFILE_HOBBY_SOFT || vars.PROFILE_HOBBY_SOFT }}
+          PROFILE_HOBBY_HARD: ${{ secrets.PROFILE_HOBBY_HARD || vars.PROFILE_HOBBY_HARD }}
+          PROFILE_WEBSITE: ${{ secrets.PROFILE_WEBSITE || vars.PROFILE_WEBSITE }}
+          PROFILE_LINKEDIN: ${{ secrets.PROFILE_LINKEDIN || vars.PROFILE_LINKEDIN }}
+          PROFILE_DISCORD: ${{ secrets.PROFILE_DISCORD || vars.PROFILE_DISCORD }}
+          PROFILE_EMAIL: ${{ secrets.PROFILE_EMAIL || vars.PROFILE_EMAIL }}
+        run: python today.py
+      - name: Commit
+        run: |-
+          git add .
+          git diff
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git commit -m "Updated README" -a || echo "No changes to commit"
+          git push

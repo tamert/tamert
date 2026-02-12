@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Generated cache files (keep requirements + optional archive)
+cache/*.txt
+!cache/requirements.txt
+!cache/repository_archive.txt
