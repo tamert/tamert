@@ -11,6 +11,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      USER_NAME: ${{ secrets.USER_NAME || github.repository_owner }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,13 +24,23 @@ jobs:
           python-version: "3.11"
           cache: pip
           cache-dependency-path: cache/requirements.txt
+      - name: Restore README cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            cache/*.txt
+            !cache/requirements.txt
+            !cache/repository_archive.txt
+          key: ${{ runner.os }}-readme-cache-${{ env.USER_NAME }}-v1
+          restore-keys: |
+            ${{ runner.os }}-readme-cache-${{ env.USER_NAME }}-
+            ${{ runner.os }}-readme-cache-
       - name: Install dependencies
         run: python -m pip install -r cache/requirements.txt
       - name: Update profile assets
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USER_NAME: ${{ secrets.USER_NAME || github.repository_owner }}
           USE_REPO_ARCHIVE: ${{ secrets.USE_REPO_ARCHIVE || vars.USE_REPO_ARCHIVE }}
           PROFILE_TITLE: ${{ secrets.PROFILE_TITLE || vars.PROFILE_TITLE }}
           PROFILE_OS: ${{ secrets.PROFILE_OS || vars.PROFILE_OS }}
