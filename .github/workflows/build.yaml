@@ -27,10 +27,7 @@ jobs:
       - name: Restore README cache
         uses: actions/cache@v4
         with:
-          path: |
-            cache/*.txt
-            !cache/requirements.txt
-            !cache/repository_archive.txt
+          path: cache
           key: ${{ runner.os }}-readme-cache-${{ env.USER_NAME }}-v1
           restore-keys: |
             ${{ runner.os }}-readme-cache-${{ env.USER_NAME }}-
