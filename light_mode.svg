@@ -16,31 +16,18 @@ size-adjust: 109%;
 text, tspan {white-space: pre;}
 </style>
 <rect width="985px" height="530px" fill="#f6f8fa" rx="25"/>
-<text x="25" y="30" fill="#24292f" class="ascii" font-size="11px" transform="translate(0 55)">
-<tspan x="25" y="30">           :77J7GGG&amp;#GGB@B5#Y~YY?:^.. .           </tspan>
-<tspan x="25" y="45">         :.~5G&amp;GJP#G#&amp;@@@@@&amp;&amp;#5GBPJ7YY?:          </tspan>
-<tspan x="25" y="60">         :?J5GPJ!7J5&amp;@@@@@@@@@&amp;B&amp;@@@@@5^:.        </tspan>
-<tspan x="25" y="75">          ^G#BGPGGYPBG#&amp;@&amp;&amp;&amp;@@@&amp;@@@&amp;PGYJ~.        </tspan>
-<tspan x="25" y="90">         ~G&amp;@&amp;@@##G???7YY?5G??^^J#&amp;@&amp;@5!~.        </tspan>
-<tspan x="25" y="105">         .?&amp;@@@&amp;&amp;5~. !PP7~?:     ~##&amp;#P5?.        </tspan>
-<tspan x="25" y="120">         ..#@@@&amp;!   ^#@P^.        Y@#G@B?.        </tspan>
-<tspan x="25" y="135">           7@@@Y   .?P?          .Y@@@5.          </tspan>
-<tspan x="25" y="150">            7@&amp;5JYPPPJ!. .?JYJ777.7@@G.           </tspan>
-<tspan x="25" y="165">            ^@5G@5Y5P5G~ :JJJ??77:^B@~            </tspan>
-<tspan x="25" y="180">         ^. ~@?^?J7?!.^:   ^77!!.  J5.:           </tspan>
-<tspan x="25" y="195">         :. .PJ                    7~             </tspan>
-<tspan x="25" y="210">         :~^ 7#~    :5?^~7^       !5.             </tspan>
-<tspan x="25" y="225">        :~~^:.P#? ..!#&amp;&amp;#B?:..   :G5:^  .         </tspan>
-<tspan x="25" y="240">        .~~.  !&amp;#7JGPBGPBBGPPY..?BB~              </tspan>
-<tspan x="25" y="255">          ^.   7&amp;&amp;#P^:77?7   ?JP&amp;G::.:.           </tspan>
-<tspan x="25" y="270">           .    7&amp;@@P~!P#7 .7#@@#: .              </tspan>
-<tspan x="25" y="285">            ~J~JP&amp;@@@&amp;GP#BJ5@@B5!!?!J~:           </tspan>
-<tspan x="25" y="300">        ^!5G@#5#&amp;@@@@@@@@@@&amp;@5^   ~!5@&amp;P?~.       </tspan>
-<tspan x="25" y="315">     .JG&amp;@@@@@@&amp;&amp;@@@@@@@@@@P!:    ^7P@@@@@&amp;Y^     </tspan>
-<tspan x="25" y="330">      7B@@@@@@@&amp;BYP&amp;@@@@&amp;#J      .!G@@@@@@B7.     </tspan>
-<tspan x="25" y="345">        7B@@@@@@@GJPPGPP7.    .~?#@@@@@@B7        </tspan>
-<tspan x="25" y="360">          ^JB&amp;@@@@@&amp;#GYJJJJJ5B#@@@@@&amp;#J^.         </tspan>
-<tspan x="25" y="375">             ^75BB@@@@@@@@@@@@@&amp;BB57^.            </tspan>
+<text x="0" y="0" fill="#24292f" class="ascii" font-size="11px" transform="translate(330 505) rotate(-90)">
+<tspan x="0" y="0">     ___          ___          ___          ___          ___     </tspan>
+<tspan x="0" y="15">    /\  \        /\  \        /\  \        /\  \        /\  \    </tspan>
+<tspan x="0" y="30">    \:\  \      /::\  \      /::\  \      /::\  \      /::\  \   </tspan>
+<tspan x="0" y="45">     \:\  \    /:/\:\  \    /:/\:\  \    /:/\:\  \    /:/\:\  \  </tspan>
+<tspan x="0" y="60">     /::\  \  /::\~\:\  \  /::\~\:\  \  /::\~\:\  \  /:/  \:\  \ </tspan>
+<tspan x="0" y="75">    /:/\:\__\/:/\:\ \:\__\/:/\:\ \:\__\/:/\:\ \:\__\/:/__/ \:\__\</tspan>
+<tspan x="0" y="90">   /:/  \/__/\/__\:\/:/  /\:\~\:\ \/__/\/_|::\/:/  /\:\  \ /:/  /</tspan>
+<tspan x="0" y="105">  /:/  /          \::/  /  \:\ \:\__\     |:|::/  /  \:\  /:/  / </tspan>
+<tspan x="0" y="120">  \/__/           /:/  /    \:\ \/__/     |:|\/__/    \:\/:/  /  </tspan>
+<tspan x="0" y="135">                 /:/  /      \:\__\       |:|  |       \::/  /   </tspan>
+<tspan x="0" y="150">                 \/__/        \/__/        \|__|        \/__/    </tspan>
 </text>
 <text x="390" y="30" fill="#24292f">
 <tspan x="390" y="30" id="profile_title">tamert@github</tspan> -———————————————————————————————————————————-—-
