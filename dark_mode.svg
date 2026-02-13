@@ -16,18 +16,32 @@ size-adjust: 109%;
 text, tspan {white-space: pre;}
 </style>
 <rect width="985px" height="530px" fill="#161b22" rx="25"/>
-<text x="0" y="0" fill="#c9d1d9" class="ascii" font-size="11px" transform="translate(330 505) rotate(-90)">
-<tspan x="0" y="0">     ___          ___          ___          ___          ___     </tspan>
-<tspan x="0" y="15">    /\  \        /\  \        /\  \        /\  \        /\  \    </tspan>
-<tspan x="0" y="30">    \:\  \      /::\  \      /::\  \      /::\  \      /::\  \   </tspan>
-<tspan x="0" y="45">     \:\  \    /:/\:\  \    /:/\:\  \    /:/\:\  \    /:/\:\  \  </tspan>
-<tspan x="0" y="60">     /::\  \  /::\~\:\  \  /::\~\:\  \  /::\~\:\  \  /:/  \:\  \ </tspan>
-<tspan x="0" y="75">    /:/\:\__\/:/\:\ \:\__\/:/\:\ \:\__\/:/\:\ \:\__\/:/__/ \:\__\</tspan>
-<tspan x="0" y="90">   /:/  \/__/\/__\:\/:/  /\:\~\:\ \/__/\/_|::\/:/  /\:\  \ /:/  /</tspan>
-<tspan x="0" y="105">  /:/  /          \::/  /  \:\ \:\__\     |:|::/  /  \:\  /:/  / </tspan>
-<tspan x="0" y="120">  \/__/           /:/  /    \:\ \/__/     |:|\/__/    \:\/:/  /  </tspan>
-<tspan x="0" y="135">                 /:/  /      \:\__\       |:|  |       \::/  /   </tspan>
-<tspan x="0" y="150">                 \/__/        \/__/        \|__|        \/__/    </tspan>
+<rect x="18" y="18" width="345" height="494" rx="18" fill="#0b1220" opacity="0.35"/>
+<text x="130" y="70" fill="#e6edf3" class="ascii" font-size="18px">
+<tspan x="130" y="70">         _ </tspan>
+<tspan x="130" y="88"> _______| |</tspan>
+<tspan x="130" y="106">(_______  |</tspan>
+<tspan x="130" y="124">        |_|</tspan>
+<tspan x="130" y="142"> _________ </tspan>
+<tspan x="130" y="160">(____  _  )</tspan>
+<tspan x="130" y="178"> ___| |_| |</tspan>
+<tspan x="130" y="196">(_________)</tspan>
+<tspan x="130" y="214"> _________ </tspan>
+<tspan x="130" y="232">(______   )</tspan>
+<tspan x="130" y="250"> _____(   )</tspan>
+<tspan x="130" y="268">(_________)</tspan>
+<tspan x="130" y="286"> _________ </tspan>
+<tspan x="130" y="304">(  _   _  )</tspan>
+<tspan x="130" y="322">| | | | | |</tspan>
+<tspan x="130" y="340">(_) (_) (_)</tspan>
+<tspan x="130" y="358"> _________ </tspan>
+<tspan x="130" y="376">(___   _  )</tspan>
+<tspan x="130" y="394"> _/   |_| |</tspan>
+<tspan x="130" y="412">(__/(_____)</tspan>
+<tspan x="130" y="430">         _ </tspan>
+<tspan x="130" y="448"> _______| |</tspan>
+<tspan x="130" y="466">(_______  |</tspan>
+<tspan x="130" y="484">        |_|</tspan>
 </text>
 <text x="390" y="30" fill="#c9d1d9">
 <tspan x="390" y="30" id="profile_title">tamert@github</tspan> -———————————————————————————————————————————-—-
